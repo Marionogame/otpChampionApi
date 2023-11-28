@@ -6,7 +6,7 @@
   "scripts": {
     "test": "nodemon index.js",
     "start": "nodemon index.js",
-    "build": "yarn install"
+    "build": "yarn install -D netlify-plugin-chrome"
   },
   "author": "Mario Espaillat",
   "license": "ISC",
