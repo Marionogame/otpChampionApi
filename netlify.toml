@@ -1,6 +1,12 @@
 [build]
-  command = "nodemon index.js"  
-  functions = "nodemon index.js"  
+  command = "npm run build"  # Ajusta esto según tus necesidades
+
+[dev]
+  command = "npm run start"  # Ajusta esto según tus necesidades
+  port = 3000  # Ajusta el puerto según el que uses en tu aplicación
+
+[[plugins]]
+  package = "netlify-plugin-chrome"
 
 [build.environment]
-  NODE_VERSION = "18.12.1"        
+  NODE_VERSION = "18.12.1"
