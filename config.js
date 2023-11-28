@@ -22,11 +22,11 @@ const config = {
     client: "mysql2",
     version: "8.0.22",
     connection: {
-      user: "Eduardo",
-      password: "123456",
-      host: "142.44.139.4",
+      user: "root",
+      password: "1234",
+      host: "localhost",
       port: 3306,
-      database: "max",
+      database: "mydb",
       typeCast: function (field, next) {
         if (field.type === "TINY" && field.length == 1) {
           return field.string() === "1";
@@ -55,13 +55,14 @@ const config = {
         headers: ["Accept", "Authorization", "Content-Type", "If-None-Match"],
         additionalHeaders: ["userId", "userName", "platform"],
       },
+      cors: true,
       security: {
         hsts: true,
       },
     },
   },
   email: {
-    user: "info.maxmonitor@gmail.com",
+    user: "mario@gmail.com",
     pass: "ikompras2010",
   },
   assetFolder: "C:/MaxMonitorApp/files/",

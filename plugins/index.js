@@ -6,7 +6,6 @@ const Auth = require("./auth");
 const Database = require("./database");
 const Socket = require("./socket");
 const Email = require("./email");
-const User = require("./user");
 const Downloads = require("./downloads");
 const Notifications = require("./notifications");
 const Maintenance = require("./maintenance");
@@ -23,7 +22,7 @@ module.exports = [
   Database,
   Socket,
   Email,
-  User,
+
   Downloads,
   Notifications,
   ...Maintenance,

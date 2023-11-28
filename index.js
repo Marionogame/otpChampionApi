@@ -35,9 +35,9 @@ start = async () => {
           index: false,
         },
       },
-      options: {
-        auth: false,
-      },
+      // options: {
+      //   auth: false,
+      // },
     });
     await server.start();
 

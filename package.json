@@ -5,15 +5,15 @@
   "main": "index.js",
   "scripts": {
     "test": "nodemon index.js",
-    "start": "node index.js"
+    "start": "nodemon index.js"
   },
   "author": "Eduardo Mejia",
   "license": "ISC",
   "dependencies": {
-    "@hapi/hapi": "^20.1.0",
-    "@hapi/inert": "^6.0.3",
-    "@hapi/vision": "^6.0.1",
-    "axios": "^0.21.1",
+    "@hapi/hapi": "^20.2.2",
+    "@hapi/inert": "^6.0.5",
+    "@hapi/vision": "^6.1.0",
+    "axios": "1.2.1",
     "bcryptjs": "^2.4.3",
     "bufferutil": "^4.0.3",
     "expo-server-sdk": "^3.6.0",
@@ -23,14 +23,14 @@
     "joi": "^17.4.0",
     "json-circular-stringify": "^1.0.1",
     "jsonwebtoken": "^8.5.1",
-    "knex": "^0.21.19",
+    "knex": "^1.0.2",
     "libphonenumber-js": "^1.9.13",
     "lodash": "^4.17.21",
     "mime-types": "^2.1.29",
     "mysql2": "^2.2.5",
     "nodemailer": "^6.5.0",
-    "objection": "^2.2.14",
-    "socket.io": "^4.0.1",
+    "objection": "^3.0.1",
+    "socket.io": "4.5.4",
     "utf-8-validate": "^5.0.4"
   },
   "devDependencies": {

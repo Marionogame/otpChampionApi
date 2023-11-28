@@ -9,6 +9,7 @@ const after = async (server) => {
       allowedHeaders: ["Content-Type, Authorization"],
       credentials: true,
     },
+    cors: true,
   });
 
   server.app.socket = io;
