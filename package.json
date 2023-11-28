@@ -1,5 +1,5 @@
 {
-  "name": "api-hapi",
+  "name": "otpchampionapi",
   "version": "1.0.0",
   "description": "Api boilerplate with hapijs",
   "main": "index.js",
@@ -7,7 +7,7 @@
     "test": "nodemon index.js",
     "start": "nodemon index.js"
   },
-  "author": "Eduardo Mejia",
+  "author": "Mario Espaillat",
   "license": "ISC",
   "dependencies": {
     "@hapi/hapi": "^20.2.2",

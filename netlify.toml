@@ -1,0 +1,6 @@
+[build]
+  command = "nodemon index.js"  
+  functions = "nodemon index.js"  
+
+[build.environment]
+  NODE_VERSION = "18.12.1"        
