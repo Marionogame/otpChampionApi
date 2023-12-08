@@ -31,6 +31,7 @@
     "mysql2": "^2.2.5",
     "nodemailer": "^6.5.0",
     "objection": "^3.0.1",
+    "pg": "^8.11.3",
     "socket.io": "4.5.4",
     "utf-8-validate": "^5.0.4"
   },
