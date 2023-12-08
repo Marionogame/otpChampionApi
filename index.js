@@ -9,7 +9,7 @@ start = async () => {
   const pgClient = new Client({
     connectionString: config.database.url,
     ssl: {
-      rejectUnauthorized: true, // Use this option if connecting to a database with a self-signed certificate
+      rejectUnauthorized: false, // Use this option if connecting to a database with a self-signed certificate
     },
   });
 
