@@ -39,7 +39,7 @@ const config = {
       min: 0,
       idleTimeoutMillis: 15000,
     },
-    url: "ppostgres://marionogame:FbFrDVUysPXQQtNvIvv8oeG4U2JvAKzn@dpg-clp9iih46foc73a80a6g-a.oregon-postgres.render.com/otpchampiondb",
+    url: "postgres://marionogame:FbFrDVUysPXQQtNvIvv8oeG4U2JvAKzn@dpg-clp9iih46foc73a80a6g-a.oregon-postgres.render.com/otpchampiondb",
   },
   server: {
     port: 8000,
