@@ -8,9 +8,9 @@ start = async () => {
   process.env.publicDomain = "";
   const pgClient = new Client({
     connectionString: config.database.url,
-    // ssl: {
-    //   rejectUnauthorized: false, // Use this option if connecting to a database with a self-signed certificate
-    // },
+    ssl: {
+      rejectUnauthorized: false, // Use this option if connecting to a database with a self-signed certificate
+    },
   });
 
   server.route({
