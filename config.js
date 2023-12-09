@@ -22,11 +22,11 @@ const config = {
     client: "mysql2",
     version: "8.0.22",
     connection: {
-      user: "root",
-      password: "1234",
-      host: "localhost",
+      user: "uo8mky1sajixc5ru",
+      password: "h99GF86V6icW5NYokdz5",
+      host: "bzwspb7quprjwsuawrui-mysql.services.clever-cloud.com",
       port: 3306,
-      database: "mydb",
+      database: "bzwspb7quprjwsuawrui",
       typeCast: function (field, next) {
         if (field.type === "TINY" && field.length == 1) {
           return field.string() === "1";
@@ -39,7 +39,6 @@ const config = {
       min: 0,
       idleTimeoutMillis: 15000,
     },
-    url: "postgres://marionogame:FbFrDVUysPXQQtNvIvv8oeG4U2JvAKzn@dpg-clp9iih46foc73a80a6g-a.oregon-postgres.render.com/otpchampiondb",
   },
   server: {
     port: 8000,

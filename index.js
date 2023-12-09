@@ -2,16 +2,9 @@ start = async () => {
   const Hapi = require("@hapi/hapi");
   const config = require("./config");
   const Plugins = require("./plugins");
-  const { Client } = require("pg");
 
   const server = Hapi.server(config.server);
   process.env.publicDomain = "";
-  const pgClient = new Client({
-    connectionString: config.database.url,
-    ssl: {
-      rejectUnauthorized: false, // Use this option if connecting to a database with a self-signed certificate
-    },
-  });
 
   server.route({
     method: "*",
@@ -30,8 +23,6 @@ start = async () => {
   try {
     process.stdout.write("\033c");
     process.stdin.resume();
-
-    await pgClient.connect();
 
     await server.register(Plugins);
     server.route({
@@ -57,9 +48,8 @@ start = async () => {
       console.log(`${info.remoteAddress}: ${method.toUpperCase()} ${url.pathname}`);
     });
 
-    server.events.on("stop", async () => {
+    server.events.on("stop", () => {
       console.log("Server stopped");
-      await pgClient.end();
       process.exit();
     });
 
